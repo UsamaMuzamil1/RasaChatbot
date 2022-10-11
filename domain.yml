@@ -1,0 +1,79 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet:
+    use_entities: true
+- want_something:
+    use_entities: true
+- insurance:
+    use_entities: true
+- Select1:
+    use_entities: true
+- Select2:
+    use_entities: true
+- Select3:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- restart:
+    use_entities: true
+- back:
+    use_entities: true
+- bot_challenge:
+    use_entities: true
+entities: []
+slots: {}
+responses:
+  utter_greet:
+  - buttons:
+    - title: buy insurance
+    - title: go back
+    - title: restart the conversation
+    text: Welcome to TPL Insurance. Please select your option to proceed.
+  utter_want_something:
+  - buttons:
+    - title: auto insurance
+    - title: travel insurance
+    - title: home insurance
+    - title: go back
+    - title: restart the conversation
+    text: Please select the item you wish to insure.
+  utter_insurance:
+  - buttons:
+    - title: Option1-Visit our website to purchase the policy
+    - title: Option2-Download our app to purchase the policy
+    - title: Option3-Talk to our representative
+    - title: go back
+    - title: restart the conversation
+    text: Choose Options
+  utter_Select1:
+  - buttons:
+    - title: go back
+    - title: restart the conversation
+    text: https://tplinsurance.com
+  utter_Select2:
+  - buttons:
+    - title: go back
+    - title: restart the conversation
+    text: https://tplinsurance.com/mobile-app
+  utter_Select3:
+  - buttons:
+    - title: go back
+    - title: restart the conversation
+    text: 021 111 000 301
+  utter_goodbye:
+  - text: Welcome
+  utter_back:
+  - text: Welcome to TPL Insurance. Please select your option to proceed. 1- buy insurance, 2- products, 3- contact us, 4- go back, 5- restart the conversation
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+actions:
+- action_show_content
+- action_restart
+- action_back
+forms: {}
+e2e_actions: []

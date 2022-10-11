@@ -1,0 +1,60 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+
+- intent: want_something
+  examples: |
+    - buy insurance
+    - want insurance
+
+- intent: insurance
+  examples: |
+    - auto insurance
+    - travel insurance
+    - home insurance
+
+- intent: Select1
+  examples: |
+    - option1
+    - choose1
+
+- intent: Select2
+  examples: |
+    - option2
+    - choose2
+
+- intent: Select3
+  examples: |
+    - option3
+    - choose3
+
+- intent: goodbye
+  examples: |
+    - thankyou
+    - thanks
+
+- intent: restart
+  examples:  |
+    - restart the conversation
+    - restart chat 
+    - start the coversation again
+    - start again        
+
+- intent: back
+  examples: |
+    - go back
+    - go back to previous step
+    - revert it
+    - revert back
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?

@@ -1,0 +1,53 @@
+version: "2.0"
+stories:
+- story: path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: want_something
+  - action: utter_want_something
+  - intent: insurance
+  - action: utter_insurance
+  - intent: Select1
+  - action: utter_Select1
+  - intent: Select2
+  - action: utter_Select2
+  - intent: Select3
+  - action: utter_Select3
+  - intent: goodbye
+  - action: utter_goodbye
+  - intent: bot_challenge
+  - action: utter_iamabot
+- story: Story from Conversation ID ecfd5454c24444dbb74b1058f6eb225d
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: want_something
+  - action: utter_want_something
+  - intent: insurance
+  - action: utter_insurance
+  - intent: Select1
+  - action: utter_Select1
+  - intent: goodbye
+  - action: utter_goodbye
+- story: restart
+  steps:
+  - intent: restart
+  - action: action_restart
+- story: Story from Conversation ID 0d295ae2568646948a80d3f317a4c94c
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: want_something
+  - action: utter_want_something
+  - intent: insurance
+  - action: utter_insurance
+  - intent: restart
+  - action: action_restart
+  - intent: greet
+  - action: utter_greet
+- story: back
+  steps:
+  - intent: back
+  - action: utter_back
+  - action: action_back
