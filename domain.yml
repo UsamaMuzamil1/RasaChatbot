@@ -44,12 +44,12 @@ responses:
     text: Please select the item you wish to insure.
   utter_insurance:
   - buttons:
-    - title: Option1-Visit our website to purchase the policy
-    - title: Option2-Download our app to purchase the policy
-    - title: Option3-Talk to our representative
+    - title: Visit our website to purchase the policy
+    - title: Download our app to purchase the policy
+    - title: Talk to our representative
     - title: go back
     - title: restart the conversation
-    text: Choose Options
+    text: Choose Option1,2 and 3
   utter_Select1:
   - buttons:
     - title: go back
